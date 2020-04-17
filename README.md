@@ -10,3 +10,7 @@ docker run --rm --security-opt label:disable  \
 ```
 
 docker run not yet properly working; still needs manual `jupyter-book build book`
+
+### Thebelabs
+use jupyter-notebook kernel 
+run notebook where jupyterbook run `jupyter notebook --NotebookApp.allow_origin='*' --NotebookApp.token=letmein`

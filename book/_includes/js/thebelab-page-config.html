@@ -15,18 +15,17 @@
     {% assign cm_language="python" %}
 {% endif -%}
 {
-    requestKernel: true,
-    binderOptions: {
-    repo: "{{ site.binder_repo_org }}/{{ site.binder_repo_name }}",
-    ref: "{{ site.binder_repo_branch }}",
-    },
     codeMirrorConfig: {
     theme: "{{ site.codemirror_theme }}",
     mode: "{{ cm_language }}"
     },
     kernelOptions: {
     kernelName: "{{ kernelName }}",
-    path: "{{ page.kernel_path }}"
+    path: "{{ page.kernel_path }}",
+    serverSettings: {
+      "baseUrl": "http://10.1.0.41:8888",
+      "token": "letmein"
+    }
     }
 }
 </script>
