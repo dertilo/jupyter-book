@@ -20,6 +20,9 @@
 - url: /intro
   not_numbered: true
 
+- url: /plato_reinforce
+  not_numbered: true
+
 #- url: https://github.com/jupyter/jupyter-book
 #  title: GitHub repository
 #  external: true
